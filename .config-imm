@@ -47,6 +47,7 @@ CONFIG_MBEDTLS_NIST_KW_C=y
 CONFIG_MBEDTLS_RSA_NO_CRT=y
 CONFIG_MBEDTLS_THREADING_C=y
 CONFIG_MBEDTLS_THREADING_PTHREAD=y
+CONFIG_PACKAGE_autocore=y
 # CONFIG_PACKAGE_automount is not set
 CONFIG_PACKAGE_bash=y
 CONFIG_PACKAGE_blkid=y
@@ -280,4 +281,3 @@ CONFIG_boost-compile-visibility-hidden=y
 CONFIG_boost-runtime-shared=y
 CONFIG_boost-static-and-shared-libs=y
 CONFIG_boost-variant-release=y
-
