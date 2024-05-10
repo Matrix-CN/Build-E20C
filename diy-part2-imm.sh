@@ -33,9 +33,9 @@ sed -i 's,-SNAPSHOT,,g' package/base-files/image-config.in
 #sed -i "s/${orig_version}/${orig_version} ($(date +"%Y-%m-%d"))/g" package/emortal/default-settings/files/99-default-settings
 
 #Add alist
-rm -rf ./feeds/luci/applications/luci-app-alist
-rm -rf ./feeds/packages/net/alist
-git clone https://github.com/sbwml/luci-app-alist package/alist
+#rm -rf ./feeds/luci/applications/luci-app-alist
+#rm -rf ./feeds/packages/net/alist
+#git clone https://github.com/sbwml/luci-app-alist package/alist
 
 #Add Mosdns
 #git clone https://github.com/sbwml/luci-app-mosdns -b v5 package/mosdns
