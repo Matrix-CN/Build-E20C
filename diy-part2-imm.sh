@@ -32,6 +32,11 @@ sed -i 's,-SNAPSHOT,,g' package/base-files/image-config.in
 #export orig_version="$(cat "package/emortal/default-settings/files/99-default-settings" | grep DISTRIB_REVISION= | awk -F "'" '{print $2}')"
 #sed -i "s/${orig_version}/${orig_version} ($(date +"%Y-%m-%d"))/g" package/emortal/default-settings/files/99-default-settings
 
+#Add alist
+rm -rf ./feeds/luci/applications/luci-app-alist
+rm -rf ./feeds/packages/net/alist
+git clone https://github.com/sbwml/luci-app-alist package/alist
+
 #Add Mosdns
 #git clone https://github.com/sbwml/luci-app-mosdns -b v5 package/mosdns
 #git clone https://github.com/sbwml/v2ray-geodata package/v2ray-geodata
